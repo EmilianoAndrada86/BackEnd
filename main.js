@@ -1,12 +1,12 @@
-import ProductManager from './ProductManager.js'
+import {ProductManager} from './ProductManager.js'
 
 
-const ProductManager = new ProductManager()
+const productManager = new ProductManager()
 
-ProductManager.getProducts()
-ProductManager.addProduct("producto prueba","Este es un producto prueba",200,"Sin imagen","abc123",25)
-ProductManager.getProducts()
-ProductManager.addProduct("producto prueba","Este es un producto prueba",200,"Sin imagen","abc123",25)
-ProductManager.getProductById(15)
+console.log(productManager.getProducts()); 
+productManager.addProduct("producto prueba","Este es un producto prueba",200,"Sin imagen","abc123",25)
+console.log(productManager.getProducts()); 
+productManager.addProduct("producto prueba","Este es un producto prueba",200,"Sin imagen","abc123",25)
+console.log(productManager.getProductById(15)); 
 
 
